@@ -1,0 +1,68 @@
+body {
+    font-size: 1.125rem;
+    color: #707070;
+    margin: 0;
+}
+/* Typography */
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    color: #312614;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h1 span {
+    color: #b7832f;
+}
+
+p {
+    margin-top: 0;
+}
+
+/* Layout */
+.container {
+    width: 90%;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    margin: 1em 0;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.col-1 {
+    width: 20%;
+}
+
+.col-2 {
+    width: 45%;
+}
+
+.col-3 {
+    width: 70%;
+}
+
+.col-bg {
+    background-color: #313614;
+    padding: 1em;
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    .row {
+        flex-direction: column;
+    }
+    .col-1, .col-2, .col-3 {
+        width: 100%;
+    }
+}

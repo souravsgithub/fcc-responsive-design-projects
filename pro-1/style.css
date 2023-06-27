@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    font-size: 1rem;
+}
+img {
+    width: 100%;
+}
+ul {
+    font-size: 1.5rem;
+}
+h1 {
+    font-size: 3rem;
+}
+h2 {
+    font-size: 2rem;
+}
+header {
+    background-color: rgb(0, 0, 56);
+}
+p {
+    line-height: 1.8;
+}
+.container {
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 2em 0;
+}
+header h1 {
+    margin: 0;
+    color: white;
+}
+
+.container h2 {
+    color: orangered;
+}
+
+.section-two {
+    background-color: rgb(0, 0, 56);
+    color: white;
+}
+
+.section-two a {
+    text-decoration: none;
+    padding: 0.5em 1.25em;
+    background-color: white;
+    color: white;
+    font-size: 1rem;
+}
+.container .orange-btn {
+    background-color: orangered;
+}
+
+.container .white-btn {
+    color: black;
+}
