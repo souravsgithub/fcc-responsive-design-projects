@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    font-size: 18px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* ===============
+    Typopraphy
+    ============== */
+h1 {
+    font-family: 'Lora', serif;
+    font-size: 2rem;
+    color: #143774;
+    font-weight: 400;
+    margin: 0;
+}
+p {
+    font-weight: 700;
+    color: #1792d2;
+    font-size: 0.715rem;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* =================
+    Layout
+    ================ */
+header {
+    background: #f8f8f8;
+    padding: 2em 0;
+}
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* =================
+    Navigation
+    ================ */
+.nav-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    font-size: 0.75rem;
+}
+
+.nav-list-item {
+    margin: 0 1em;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #707070;;
+    padding: .25em 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.current-page {
+    border-bottom: 1px solid #707070;
+}
