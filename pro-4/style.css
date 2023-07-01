@@ -36,7 +36,16 @@ header {
     margin: 0 auto;
     text-align: center;
 }
-
+.container-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media (max-width: 690px) {
+    .container-nav {
+        flex-direction: column;
+    }
+}
 /* =================
     Navigation
     ================ */
@@ -49,9 +58,16 @@ header {
 }
 
 .nav-list-item {
-    margin: 0 1em;
+    margin-left: 2em;
 }
-
+@media (max-width: 690px) {
+    .nav-list {
+        flex-direction: column;
+    }
+    .nav-list-item {
+        margin: 1em 0;
+    }
+}
 .nav-link {
     text-decoration: none;
     color: #707070;;
