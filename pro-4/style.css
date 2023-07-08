@@ -1,26 +1,63 @@
+/* =================
+    Global Styles
+    ================ */
 body {
     margin: 0;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    color: #707070;
+}
+img {
+    max-width: 100%;
+    display: block;
 }
 
 /* ===============
     Typopraphy
     ============== */
-h1 {
+h1, h2, h3 {
     font-family: 'Lora', serif;
-    font-size: 2rem;
-    color: #143774;
     font-weight: 400;
+    color: #143774;
+}
+h1 {
+    font-size: 2rem;
     margin: 0;
 }
-p {
+a {
+    color:#1792d2;
+}
+a:hover, a:focus {
+    color:#143774;
+}
+strong {
     font-weight: 700;
+}
+
+/* Logo subtitle */
+.subtitle, .article-read-more {
+    letter-spacing: 3px;
+    font-weight: 700;
+    text-transform: uppercase;
     color: #1792d2;
+}
+.subtitle {
     font-size: 0.715rem;
     margin: 0;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+}
+.article-title {
+    font-size: 1.5rem;
+}
+.article-read-more, .article-info {
+    font-size: 0.875rem;
+}
+.article-read-more {
+    text-decoration: none;
+}
+.article-read-more:hover, .article-read-more:focus {
+    color: #143774;
+    text-decoration: underline;
 }
 
 /* =================
@@ -29,43 +66,51 @@ p {
 header {
     background: #f8f8f8;
     padding: 2em 0;
+    text-align: center;
 }
 .container {
     width: 90%;
     max-width: 900px;
     margin: 0 auto;
-    text-align: center;
 }
-.container-nav {
+.container-flex {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
-@media (max-width: 690px) {
-    .container-nav {
-        flex-direction: column;
+@media (min-width: 690px) {
+    .container-flex {
+        flex-direction: row;
+    }
+    main {
+        width: 75%;
+    }
+    aside {
+        width: 20%;
     }
 }
-/* =================
-    Navigation
-    ================ */
+
+
+/* Navigation */
 .nav-list {
     list-style: none;
     padding: 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     font-size: 0.75rem;
 }
 
 .nav-list-item {
-    margin-left: 2em;
+    margin: 1em 0;
 }
-@media (max-width: 690px) {
+@media (min-width: 690px) {
     .nav-list {
-        flex-direction: column;
+        flex-direction: row;
     }
     .nav-list-item {
-        margin: 1em 0;
+        margin-left: 2em;
     }
 }
 .nav-link {
